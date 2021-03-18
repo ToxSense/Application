@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:text="Home"/>
+        <Button
+            android:id="@+id/BluetoothButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:text="Bluetooth"/>
+        <Button
+            android:id="@+id/AQIButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:text="AQI"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:background="@android:color/white"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"
+            />
+        <TextView
+            android:background="@color/colorPrimary"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"
+            />
+        <TextView
+            android:background="@android:color/white"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Type here:" />
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:background="@android:drawable/editbox_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/entry"
+            android:layout_marginLeft="10dip"
+            android:text="Open" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignTop="@id/open"
+            android:layout_toLeftOf="@id/open"
+            android:text="Send" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Close" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bild"/>
+
+</LinearLayout>

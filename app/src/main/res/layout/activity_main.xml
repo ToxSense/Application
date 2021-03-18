@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+
+    <TextView
+        android:id="@+id/txtTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3dbb7a"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Sense"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="App"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#CCCCCC"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/b_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:text="continue"/>
+
+
+
+
+</LinearLayout>

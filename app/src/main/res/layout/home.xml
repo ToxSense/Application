@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:text="Home"/>
+        <Button
+            android:id="@+id/BluetoothButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:text="Bluetooth"/>
+        <Button
+            android:id="@+id/AQIButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@color/colorPrimary"
+            android:text="AQI"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:background="@color/colorPrimary"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"
+            />
+        <TextView
+            android:background="@android:color/white"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"
+            />
+        <TextView
+            android:background="@android:color/white"
+            android:paddingTop="0dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="5dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:id="@+id/connectB"
+        android:text="Connect to headband"
+
+        />
+    </LinearLayout>
+    <TextView
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current GPS Location"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Headband"
+            android:src="@drawable/ic_headband"
+            android:padding="50dp"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/bild"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selfaqi"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="50sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="AQI"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="0"
+            android:id="@+id/compassL">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="N"
+                android:rotation="0"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/compassN"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="E"
+                android:rotation="0"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/compassE"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="S"
+                android:rotation="0"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/compassS"
+                />
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="W"
+                android:rotation="0"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:id="@+id/compassW"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:id="@+id/serverinfo"/>
+
+
+
+
+</LinearLayout>
