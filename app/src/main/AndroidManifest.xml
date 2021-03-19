@@ -31,10 +31,6 @@
             android:name="com.example.ToxSense.Home"
             android:noHistory="true"
             android:screenOrientation="portrait"/>
-        <activity
-            android:name="com.example.ToxSense.Bluetooth"
-            android:noHistory="true"
-            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

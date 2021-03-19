@@ -40,11 +40,11 @@ class AQI : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val bluetoothbutton = findViewById<Button>(R.id.BluetoothButton)
+/*        val bluetoothbutton = findViewById<Button>(R.id.BluetoothButton)
         bluetoothbutton.setOnClickListener {
             val intent = Intent(this, Bluetooth::class.java)
             startActivity(intent)
-        }
+        }*/
 
         val aqibutton = findViewById<Button>(R.id.AQIButton)
         aqibutton.setOnClickListener {
@@ -187,6 +187,7 @@ class AQI : AppCompatActivity() {
 
     override fun onDestroy() {
         tfLiteClassifier.close()
+        CameraX.unbindAll()
         super.onDestroy()
     }
 }

@@ -110,13 +110,13 @@ class Home : AppCompatActivity(), LocationListener, SensorEventListener {
         getLocation()
 
         connectB.setOnClickListener {
-            try {
-                this.connect_device()
+        try {
+            this.connect_device()
                 connectB.text = "Device connected"
                 connectB.alpha = .5f
                 connectB.isClickable = false
-            } catch (e: IOException) {
-            }
+        } catch (e: IOException) {
+        }
         }
 
 
@@ -138,11 +138,11 @@ class Home : AppCompatActivity(), LocationListener, SensorEventListener {
             startActivity(intent)
         }
 
-        val bluetoothbutton = findViewById<Button>(R.id.BluetoothButton)
+/*        val bluetoothbutton = findViewById<Button>(R.id.BluetoothButton)
         bluetoothbutton.setOnClickListener {
             val intent = Intent(this, Bluetooth::class.java)
             startActivity(intent)
-        }
+        }*/
 
         val aqibutton = findViewById<Button>(R.id.AQIButton)
         aqibutton.setOnClickListener {
@@ -180,7 +180,7 @@ class Home : AppCompatActivity(), LocationListener, SensorEventListener {
         val pairedDevices: Set<BluetoothDevice> = mBluetoothAdapter.bondedDevices
         if (pairedDevices.isNotEmpty()) {
             for (device in pairedDevices) {
-                if (device.name == "ToxSense") {
+                if (device.name == "ESP32") {
                     mmDevice = device
                     break
                 }
